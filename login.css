@@ -1,0 +1,59 @@
+
+
+.box {
+    width: 400px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  input[type=email], input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 2px;
+    border: 1px solid #4d4b4b;
+    border-radius: 5px;
+  }
+
+  input[type="submit"] {
+    display: inline-block;
+    width: 25%;
+    padding: 10px;
+    background-color: #006aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  }
+
+  p{
+    text-align: left; 
+    margin-top:1px;
+    margin-left: 6px;
+    color: #006aff;
+
+  }
+  p:hover{
+    cursor:pointer;
+  }
+  
+  .newac{
+    text-align: center; 
+    color: #006aff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  input[type="submit"]:hover {
+    background-color: #0162fd;
+  }

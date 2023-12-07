@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account Login</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+  <div class="box">
+    <h1 style="color:rgb(91, 94, 98); font-family: arial; font-size: 18px;"> Sign in</h1>
+    <h2 style="color:rgb(126, 122, 122); font-family: arial; font-size: 11px;">Use your PM Account</h2>
+    <form action="process_login.php" method="post">
+      <label>Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Email *">
+
+      <label><br>Password:</label> 
+      <input type="password" id="password" name="fpassword" placeholder="Password *">
+
+      <p><br>Forgot email?</p><br>
+
+      <input type="submit" value="Login">
+      <br><br>
+      <hr>
+        <span style="color: #657575;">Don't have an account yet?</span>
+        <div class="newac">
+              <a href="signup.html"> Create account </a>
+        </div>
+    </form>
+  </div>
+</body>
+</html>

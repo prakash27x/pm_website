@@ -1,0 +1,24 @@
+form {
+  padding-left: 100px;
+  margin-top: 50px;
+  width: 400px;
+  height: 300px;
+}
+input[type=text], input[type=email],textarea{
+  width: 100%;
+  padding: 7px 10px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-style: double;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+input[type=submit]{
+  background-color: rgb(36, 175, 239); 
+  color: rgb(250, 249, 249); 
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  border-style: none; 
+  font-size: large;
+  border-radius: 6px;
+  padding: 7px 15px;
+}
