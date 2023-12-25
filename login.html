@@ -1,30 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Account Login</title>
-  <link rel="stylesheet" type="text/css" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Login TN Accpunt/title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
+
 <body>
-  <div class="box">
-    <h1 style="color:rgb(91, 94, 98); font-family: arial; font-size: 18px;"> Sign in</h1>
-    <h2 style="color:rgb(126, 122, 122); font-family: arial; font-size: 11px;">Use your PM Account</h2>
-    <form action="process_login.php" method="post">
-      <label>Email:</label>
-      <input type="email" id="email" name="email" required placeholder="Email *">
+    <div class="wrapper">
+        <div class="login-box">
+            <div class="login-header">
 
-      <label><br>Password:</label> 
-      <input type="password" id="password" name="fpassword" placeholder="Password *">
+                <span> Login</span>
+            </div>
+            <form action="http://127.0.0.1:5500/project/booklist.html" get="" enctype="multipart/form-data"
+                onsubmit="return login()">
+                <div class="input-box">
+                    <input type="text" id="user" class="input-field" required>
 
-      <p><br>Forgot email?</p><br>
+                    <label for="user" class="label">Username
+                    </label>
+                    <i class="bx bx-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="pass" class="input-field" autocomplete="off">
+                    <label for="pass" class="label">Password</label>
+                    <i class="bx bx-lock-alt icon" id="show-password">
 
-      <input type="submit" value="Login">
-      <br><br>
-      <hr>
-        <span style="color: #657575;">Don't have an account yet?</span>
-        <div class="newac">
-              <a href="signup.html"> Create account </a>
+                    </i>
+                </div>
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot password</a>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" class="input-submit" value="Login">
+                </div>
+                <div class="register">
+                    <span>Don't have an account?
+                        <a href="#">Register</a></span>
+                </div>
+            </form>
         </div>
-    </form>
-  </div>
+
+    </div>
+
+    <script src="form.js"></script>
 </body>
+
 </html>
